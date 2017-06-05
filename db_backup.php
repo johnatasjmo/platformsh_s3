@@ -32,6 +32,7 @@ $home_dir = getenv('PLATFORM_DIR');
 require_once $home_dir . '/vendor/autoload.php';
 
 $bucket = 'courier-platform';
+/*$fixedBranch = 'master'*/
 $fixedBranch = strtolower(preg_replace('/[\W\s\/]+/', '-', getenv('PLATFORM_BRANCH')));
 $baseDirectory = 'platform/' . getenv('PLATFORM_APPLICATION_NAME') . '/' . $fixedBranch;
 
